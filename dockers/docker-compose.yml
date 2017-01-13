@@ -1,6 +1,6 @@
 version: '2'
 services:
-  fcs:
+  web:
     build: ./web
     ports:
       - "13003:3003"
