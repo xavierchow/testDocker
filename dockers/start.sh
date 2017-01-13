@@ -2,9 +2,9 @@
 set -ev
 
 pushd `dirname $0`
-docker-compose up  --build
+docker-compose up -d  --build
 docker-compose ps
 popd
-netstat -an | grep 300
+netstat -an | grep 3003
 ifconfig
 
