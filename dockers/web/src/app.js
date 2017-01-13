@@ -20,7 +20,7 @@ app.post('/web/action/:txnId', function (req, res) {
 })
 
 
-app.listen(3003, '0.0.0.0', () => {
-  console.log('Express server started on port %s at %s', app.address().port, app.address().address);
+var listener = app.listen(3003, '0.0.0.0', () => {
+  console.log('Express server started on port %s at %s', listener.address().port, listener.address().address);
 });
 
