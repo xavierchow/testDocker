@@ -3,7 +3,7 @@ services:
   web:
     build: ./web
     ports:
-      - "3003:3003"
+      - "8003:3003"
     volumes:
       - './web/src:/opt/work/web/'
   #py:

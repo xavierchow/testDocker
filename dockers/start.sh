@@ -5,6 +5,6 @@ pushd `dirname $0`
 docker-compose up -d  --build
 docker-compose ps
 popd
-netstat -an | grep 3003
+netstat -an | grep 003
 ifconfig
 
