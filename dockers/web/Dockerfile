@@ -12,5 +12,6 @@ RUN mv ./node_modules ../node_modules
 
 COPY ./src/ ./
 
-EXPOSE 3003
+CMD [ "npm", "start" ]
+#EXPOSE 3003
 

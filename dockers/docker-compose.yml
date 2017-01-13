@@ -6,8 +6,6 @@ services:
       - "13003:3003"
     volumes:
       - './web/src:/opt/work/web/'
-    working_dir: '/opt/work/web'
-    command: npm start
   py:
     build: ./py
     ports:
