@@ -20,7 +20,7 @@ app.post('/web/action/:txnId', function (req, res) {
 })
 
 
-app.listen(3003, '0.0.0.0', () => {
-  console.log('Mock Web listening on port 3003');
+app.listen(6000, '0.0.0.0', () => {
+  console.log('Mock Web listening on port 6000');
 })
 
