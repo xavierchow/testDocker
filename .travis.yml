@@ -9,6 +9,6 @@ before_script:
   - ./dockers/start.sh
 script:
   - curl -X POST http://localhost:5000/
-  - curl -X POST http://localhost:13000/
+  - curl -X POST http://localhost:13003/
 notifications:
   email: false
