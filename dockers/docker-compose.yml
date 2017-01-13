@@ -6,11 +6,11 @@ services:
       - "13003:3003"
     volumes:
       - './web/src:/opt/work/web/'
-  py:
-    build: ./py
-    ports:
-     - "5000:5000"
-    volumes:
-     - ./py:/code
+  #py:
+  #  build: ./py
+  #  ports:
+  #   - "5000:5000"
+  #  volumes:
+  #   - ./py:/code
 
 
