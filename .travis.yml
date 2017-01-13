@@ -1,0 +1,13 @@
+sudo: false
+language: node_js
+services:
+  - docker
+env:
+node_js:
+  - "6"
+before_script:
+  - ./dockers/start.sh
+script:
+  - curl -X POST http://localhost:3003/
+notifications:
+  email: false
