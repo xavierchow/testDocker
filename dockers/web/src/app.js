@@ -20,7 +20,8 @@ app.post('/web/action/:txnId', function (req, res) {
 })
 
 
-app.listen(3003, '127.0.0.1', () => {
-  console.log('Mock Web listening on port 3003');
-})
+app.listen(3003, '0.0.0.0');
+app.on('listening', function() {
+    console.log('Express server started on port %s at %s', app.address().port, app.address().address);
+});
 
